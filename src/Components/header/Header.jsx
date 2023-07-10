@@ -1,11 +1,12 @@
 import React from "react";
+import NavigationBar from "./NavigationBar";
 
 
 const Header = () =>{
 
     return(
         <div>
-            <h1>Header</h1>
+           <NavigationBar/>
        </div>
     );
 
