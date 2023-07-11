@@ -9,9 +9,10 @@ const MainComponents = () =>{
     return(
         <div>
         <Header/>
+        <br></br>
         <Body/>
         <Footer/>
-   </div>
+       </div>
     );
 
 }

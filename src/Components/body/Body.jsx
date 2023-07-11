@@ -1,4 +1,5 @@
 import React from "react";
+import Menu from "./Menu";
 
 
 const Body = () =>{
@@ -7,7 +8,7 @@ const Body = () =>{
     return(
     <div>
 
-     <h1>Body</h1>
+     <Menu/>
      
     </div>
     );
