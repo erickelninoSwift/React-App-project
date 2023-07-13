@@ -1,18 +1,22 @@
 import React from "react";
+import '../../assets/css/Main.css'
 
 
 const Footer = () =>{
 
 
     return(
-    <div>
+    <div className="footer">
 
-    <h1>Footer</h1>
+         <div className="container">
+            
+            <div row justify-content-center>
+                <p> Erick Elnino . All Rights Reserved 2023</p>
+            </div>
+    
+         </div>
     
     </div>
     );
-
 }
-
-
 export default Footer
