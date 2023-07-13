@@ -48,6 +48,8 @@ import Container from 'react-bootstrap/Container'
 
           render() {
 
+            document.title = "Contact"
+
             const style = {
               textAlign: "left",
               width: "50%"

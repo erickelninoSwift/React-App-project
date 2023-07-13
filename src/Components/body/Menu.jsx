@@ -53,7 +53,7 @@ export class Menu extends Component {
   render() {
 
 
-
+    document.title = "Menu"
 
     let dishDetails = <div> 
         <b>Dish details</b>
