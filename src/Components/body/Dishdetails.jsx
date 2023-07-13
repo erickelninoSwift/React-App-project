@@ -9,7 +9,8 @@ const Dishdetails = (props) =>{
 
     return(
       
-        <Card style={{ width: '35rem', margin:'5px'}}>
+      
+        <Card style={{ width: '100%', margin:'5px'}}>
         <Card.Img variant="top" src={props.allDetails.image}/>
         <Card.Body>
           <Card.Title><b>{props.allDetails.name}</b></Card.Title>

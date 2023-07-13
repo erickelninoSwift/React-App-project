@@ -2,5 +2,17 @@
 {
     color: #ffffff;
     text-decoration: none;
-    
+    font-size: 12px;
+    cursor: pointer;
+
+}
+
+.mainMenu:hover
+{
+    color: gray;
+}
+
+.logoImage
+{
+    height: 40px;
 }
