@@ -7,6 +7,8 @@ import MenuItems from './MenuItems.jsx';
 import Dishdetails from './Dishdetails.jsx';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import COMMENTS from '../../data/comments.js';
+
 // import { useState } from 'react';
 
 
@@ -19,6 +21,7 @@ export class Menu extends Component {
         this.state = {
 
             AllDishes : DISHES,
+            AllComment: COMMENTS,
             selectedDish : null,
             show: false
         }
@@ -34,10 +37,6 @@ export class Menu extends Component {
             selectedDish: dish,
             show : !this.state.show
         })
-
-    
-
-
         
     }
 
@@ -66,7 +65,16 @@ console.log(dishDetails);
 
     if(this.state.selectedDish !== null)
     {
-        dishDetails = <Dishdetails  allDetails = {this.state.selectedDish}/>
+       let myComment = this.state.AllComment.filter(comment =>{
+
+        return comment.dishId === this.state.selectedDish.id
+
+       });
+       console.log(myComment)
+
+        dishDetails = <Dishdetails  allDetails = {this.state.selectedDish}
+        selectedComment ={myComment}
+        />
        
         console.log(dishDetails)
     }
@@ -74,7 +82,10 @@ console.log(dishDetails);
    
 
     const menu = this.state.AllDishes.map(Item =>{
-       
+
+    //    let allcomment = this.state.AllComment.filter( comment =>{
+    //        return comment.dishId === Item.id;
+    //    });
         return(
             <MenuItems dish ={Item} key={Item.id} mydishhSelected = {() =>this.dishSelected(Item)} modal={this.handleShow}/>
         );

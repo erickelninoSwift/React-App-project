@@ -23,7 +23,7 @@ const Dishdetails = (props) =>{
           <p><b>Label: {props.allDetails.label}</b></p>
           <p><b>Price: R{props.allDetails.price}</b></p>
           <hr></hr>
-          <DishComment comment ={props.allDetails.comments} />
+          <DishComment comment ={props.selectedComment} />
         </Card.Body>
       </Card>
     );
