@@ -8,8 +8,6 @@ const Dishdetails = (props) =>{
 
 
     return(
-      
-      
         <Card style={{ width: '100%', margin:'5px'}}>
         <Card.Img variant="top" src={props.allDetails.image}/>
         <Card.Body>
@@ -27,8 +25,6 @@ const Dishdetails = (props) =>{
         </Card.Body>
       </Card>
     );
-
 }
-
 
 export default Dishdetails
